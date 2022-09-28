@@ -3,7 +3,7 @@ import { Image, Linking, View } from "react-native";
 import Text from "../components/Text";
 import Colors from "../constants/colors";
 import Index from "../src";
-import {Home,Teacher,MessageText, Award, Category2} from 'iconsax-react-native'
+import {Home,Teacher,MessageText, Award, Category2, MaskRight} from 'iconsax-react-native'
 import { basicsInfo } from "../constants/config";
 
 export default function DrawerNavigators() {
@@ -70,12 +70,28 @@ export default function DrawerNavigators() {
                     paddingVertical:0,
                     paddingTop:0,
                 },
+                headerTitle:()=>(
+                    <View style={{
+                        flexDirection:"row",
+                        alignItems:"center",
+                    }} >
+                        <Image
+                            source={require('../assets/images/logo.png')}
+                            style={{
+                                width:40,
+                                height:40,
+                                marginLeft:-15,
+                                marginRight:15,
+                            }}
+                        />
+                        <Text size={12} >Selamat Datang di{'\n'}<Text weight="SemiBold" >SMPN 53 Jakarta</Text></Text>
+                    </View>
+                )
             }}
         >
             <Drawer.Screen
                 name="Home" component={Index} 
                 options={{
-                    headerShown:false,
                     drawerIcon:({focused})=>(
                         <View style={{
                           marginLeft:0,
@@ -87,7 +103,6 @@ export default function DrawerNavigators() {
                         drawerLabel:({focused})=>(
                         <Text weight={focused ? 'SemiBold' : 'Regular'}  >Halaman Depan</Text>
                     ),
-          
                 }}
             />
             <Drawer.Screen
