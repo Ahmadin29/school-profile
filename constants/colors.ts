@@ -2,7 +2,7 @@ const Colors = {
     text:"#1F2937",
     textSecondary:"#AAAAAA",
   
-    primary:"#1961CD",
+    primary:"#0a9e16",
 
     success:"#90CC18",
     danger:"#FF3F3F",

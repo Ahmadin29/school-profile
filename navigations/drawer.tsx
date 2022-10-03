@@ -5,6 +5,8 @@ import Colors from "../constants/colors";
 import Index from "../src";
 import {Home,Teacher,MessageText, Award, Category2, MaskRight} from 'iconsax-react-native'
 import { basicsInfo } from "../constants/config";
+import News from "../src/news";
+import Media from "../src/galery";
 
 export default function DrawerNavigators() {
     const Drawer = createDrawerNavigator();
@@ -108,7 +110,6 @@ export default function DrawerNavigators() {
             <Drawer.Screen
                 name="Profile" component={Index} 
                 options={{
-                    headerShown:false,
                     drawerIcon:({focused})=>(
                         <View style={{
                             marginLeft:0,
@@ -124,9 +125,8 @@ export default function DrawerNavigators() {
                 }}
             />
             <Drawer.Screen
-                name="News" component={Index} 
+                name="News" component={News} 
                 options={{
-                    headerShown:false,
                     drawerIcon:({focused})=>(
                         <View style={{
                           marginLeft:0,
@@ -160,9 +160,8 @@ export default function DrawerNavigators() {
                 }}
             />
             <Drawer.Screen
-                name="Galery" component={Index} 
+                name="Galery" component={Media} 
                 options={{
-                    headerShown:false,
                     drawerIcon:({focused})=>(
                         <View style={{
                           marginLeft:0,

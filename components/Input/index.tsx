@@ -8,7 +8,7 @@ import Ionicon from '@expo/vector-icons/Ionicons';
 interface InputProps {
     containerStyle? : ViewStyle,
     inputStyle?     : ViewStyle,
-    labelStyle?      : TextStyle,
+    labelStyle?      : TextStyle | {},
     messageStyle?    : TextStyle,
     
     label?          : string,
