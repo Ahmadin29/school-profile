@@ -84,7 +84,7 @@ export default function News() {
                 <View style={{
                     width:layouts.window.width - 100
                 }} >
-                    <Text weight="SemiBold" color="primary" >{v.title.rendered}</Text> 
+                    <Text weight="SemiBold" color="primary" size={18} >{v.title.rendered}</Text> 
                     <Text size={10} >Di posting pada {moment(v.date).format('DD MMM YYYY')} oleh <Text size={10} weight="SemiBold" >ADMIN</Text></Text> 
                     <TouchableOpacity style={{
                         marginTop:10,
