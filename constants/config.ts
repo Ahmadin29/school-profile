@@ -6,4 +6,5 @@ export const setDefaultURL = ()=>{
 
 export const basicsInfo = {
     name:"SMP Negeri 53 Jakarta",
+    kepsek:"https://smpn53jakarta.sch.id/wp-content/uploads/2022/06/SISPA.png"
 }
