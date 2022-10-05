@@ -73,9 +73,6 @@ export default function Index() {
                         borderRadius:20,
                     }
                 }}
-                closeOnDragDown={false}
-                closeOnPressBack={false}
-                closeOnPressMask={false}
             >
                 <ScrollView>
                     <View style={{

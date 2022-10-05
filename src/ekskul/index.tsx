@@ -52,7 +52,6 @@ export default function Ekskul() {
                             width:layouts.window.width - 100
                         }} >
                             <Text weight="SemiBold" >{item.title}</Text>
-                            <Text size={10} color="textSecondary" >{item.link}</Text>
                         </View>
                     </TouchableOpacity>
                 )
