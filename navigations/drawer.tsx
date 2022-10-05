@@ -7,6 +7,7 @@ import {Home,Teacher,MessageText, Award, Category2, MaskRight} from 'iconsax-rea
 import { basicsInfo } from "../constants/config";
 import News from "../src/news";
 import Media from "../src/galery";
+import Ekskul from "../src/ekskul";
 
 export default function DrawerNavigators() {
     const Drawer = createDrawerNavigator();
@@ -142,9 +143,8 @@ export default function DrawerNavigators() {
                 }}
             />
             <Drawer.Screen
-                name="Ekskul" component={Index} 
+                name="Ekskul" component={Ekskul} 
                 options={{
-                    headerShown:false,
                     drawerIcon:({focused})=>(
                         <View style={{
                           marginLeft:0,

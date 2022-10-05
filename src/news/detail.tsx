@@ -21,10 +21,10 @@ export default function NewsDetail(props:any) {
     },[])
 
     const runFirst = `
-      document.getElementById('header').style.display = 'none';
+        document.getElementById('header').style.display = 'none';
+        document.getElementById('footer').style.display = 'none';
       document.getElementById('secondary').style.display = 'none';
       document.getElementById('comments').style.display = 'none';
-      document.getElementById('footer').style.display = 'none';
       document.getElementById('nav-below').style.display = 'none';
       document.getElementById('entry-author')[0].style.display = 'none';
       true; // note: this is required, or you'll sometimes get silent failures
