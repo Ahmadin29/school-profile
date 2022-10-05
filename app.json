@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "school-profile",
-    "slug": "school-profile",
+    "name": "SMPN 53 Jakarta",
+    "slug": "smpn53jakarta",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.adici.smpn53jakarta"
@@ -32,7 +32,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "adb659d5-d48f-412d-a70f-1f9153619c44"
+        "projectId": "275afb83-2b25-4087-8380-f776083fc855"
       }
     }
   }
