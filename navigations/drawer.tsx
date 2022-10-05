@@ -7,6 +7,7 @@ import {Home,Teacher,MessageText, Award, Category2, MaskRight} from 'iconsax-rea
 import { basicsInfo } from "../constants/config";
 import News from "../src/news";
 import Media from "../src/galery";
+import Profile from "../src/profile";
 import Ekskul from "../src/ekskul";
 
 export default function DrawerNavigators() {
@@ -109,7 +110,7 @@ export default function DrawerNavigators() {
                 }}
             />
             <Drawer.Screen
-                name="Profile" component={Index} 
+                name="Profile" component={Profile} 
                 options={{
                     drawerIcon:({focused})=>(
                         <View style={{
