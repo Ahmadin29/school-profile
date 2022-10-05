@@ -86,7 +86,7 @@ export default function DrawerNavigators() {
                                 marginRight:15,
                             }}
                         />
-                        <Text size={12} >Selamat Datang di{'\n'}<Text weight="SemiBold" >SMPN 53 Jakarta</Text></Text>
+                        <Text size={12} >Selamat Datang di{'\n'}<Text weight="SemiBold" >{basicsInfo.name}</Text></Text>
                     </View>
                 )
             }}
